@@ -9,10 +9,10 @@ import {PhotoModule} from "./modules/photo/photo.module";
       PhotoModule,
       TypeOrmModule.forRoot({
           type: 'postgres',
-          host: 'localhost',
-          port: 32771,
+          host: 'ci-db.cp4dy3ma9ykn.us-east-1.rds.amazonaws.com',
+          port: 5432,
           username: 'ci_db_user',
-          password: '',
+          password: 'cidbpassword123%',
           database: 'ci_db',
           entities: [__dirname + '/**/*.entity{.ts,.js}'],
           synchronize: true,
